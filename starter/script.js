@@ -22,7 +22,36 @@ function getPasswordOptions() {
   // prompt for user to select password length
   var passwordLength = parseInt(prompt("Please ennter a password length from 8-128 characters):"));
 
+  if (passwordLength >= 8 && passwordLength <= 128) {
 
+      var includeLowerrcase = confirm("Would you like the password to include lowercase characters?");
+
+      var includeUppercase = confirm("Would you like the password to include uppercase letters?");
+
+      var includeNumeric = confirm("Would you like the password to include numeric characters?");
+
+      var includeSpecial = confirm("Would you like the password to include special characters?");
+
+      if (includeLowerrcase || includeUppercase || includeNumeric || includeSpecial) {
+
+        if (includeLowerrcase) {
+          possibleCharacters = possibleCharacters.concat(lowerCasedCharacters);
+        }
+
+        if (includeUppercase) {
+          possibleCharacters = possibleCharacters.concat(upperCasedCharacters);
+        }
+
+        if (includeNumeric) {
+          possibleCharacters = possibleCharacters.concat(numericCharacters);
+        }
+        
+        if (includeSpecial) {
+          possibleCharacters = possibleCharacters.concat(specialCharacters);
+        }
+      }
+
+  }
 }
 
 // Function for getting a random element from an array
