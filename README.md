@@ -1,12 +1,10 @@
 # Personal-Portfolio
 ## Description
-My motivation for creating the JavaScript code for the Console-Finances task was to analyze a dataset containing financial records with Date and Profit/Losses fields. By writing this code, I aimed to calculate various important financial metrics to gain insights into the dataset.
+The Password Generator App was created to address the need for strong and unique passwords in today's digital world. As a web developer, I aimed to build a practical application that demonstrates my skills in JavaScript, HTML, and CSS while providing users with a convenient and secure tool for generating strong passwords. Many people struggle to create strong passwords, and the app was designed to offer a user-friendly and reliable solution to this common problem.
 
-The task involved calculating the total number of months in the dataset, finding the net total amount of Profit/Losses over the entire period, and determining the average of the changes in Profit/Losses throughout the dataset. I was also required to track the monthly changes in profits and find the average change using this information.
+The task involved developing a password generator app that runs in the browser and dynamically updates HTML and CSS elements based on user inputs. Users could specify the desired password length within a valid range of 8 to 128 characters and choose from various character types, including lowercase letters, uppercase letters, numeric digits, and special characters. To ensure security, the app enforced the selection of at least one character type and incorporated special characters in the generated passwords. 
 
-Additionally, I was determined to identify the greatest increase in profits (with the corresponding date) and the greatest decrease in losses (also with the corresponding date) over the entire period of financial data.
-
-By undertaking this challenge and creating the JavaScript code, I sought to demonstrate my proficiency in handling financial data and applying analytical skills using JavaScript. I also aimed to provide an organized and insightful analysis, displaying the results in a clear and user-friendly manner within the browser, similar to the example provided in the task description. Overall, my motivation was to showcase my ability to extract valuable financial insights from a dataset and present them effectively through JavaScript programming.
+Building the Password Generator App was a challenging yet rewarding project that strengthened my technical skills in web development. It highlighted the importance of creating practical tools that positively impact users' digital security. The experience not only enhanced my debugging and troubleshooting skills but also reinforced the significance of building user-focused applications that follow industry standards. Overall, the app serves as a testament to my ability to create functional, secure, and responsive applications that meet user needs.
 
 - [Installation](#installation)
 - [Usage](#usage)
@@ -20,13 +18,13 @@ By undertaking this challenge and creating the JavaScript code, I sought to demo
 - cloned the repository on my Desktop using the SSH Key
 - Customised the content of the website by adding JavaScript
 ## Usage
-![website_image](./Console.JPG)
+![website_image](./starter/websiteimage.JPG)
 
 ## Credits
 There were no collaborators for this project.
 
 ## Link
-https://saad-054.github.io/Console-Finances/
+https://saad-054.github.io/Password-Generator/
 
 ## License
 MIT License
