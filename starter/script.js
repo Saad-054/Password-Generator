@@ -19,13 +19,23 @@ function getPasswordOptions() {
 }
 
 // Function for getting a random element from an array
+// Math.floor allows for a whole number, Math.random produces a random number
 function getRandom(arr) {
-
+  var randomIndex = Mathc.floor(Math.random() * arr.length);
+  return arr[randomIndex];
 }
 
 // Function to generate password with user input
 function generatePassword() {
+  var options = getPasswordOptions();
+  var generatePassword = '';
 
+  // password generated randomly from the characters from the possibleCharacters array
+  for (var i = 0; i < options.length; i++) {
+    generatePassword += getRandom(options.possibleCharacters);
+  }
+
+  return generatedPassword; 
 }
 
 // Get references to the #generate element
