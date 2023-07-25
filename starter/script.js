@@ -16,6 +16,13 @@ var upperCasedCharacters = [ 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', '
 // Function to prompt user for password options
 function getPasswordOptions() {
 
+  // empty array to store possible characters based on user criteria
+  var possibleCharacters = [];
+
+  // prompt for user to select password length
+  var passwordLength = parseInt(prompt("Please ennter a password length from 8-128 characters):"));
+
+
 }
 
 // Function for getting a random element from an array
