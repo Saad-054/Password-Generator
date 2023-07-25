@@ -22,16 +22,22 @@ function getPasswordOptions() {
   // prompt for user to select password length
   var passwordLength = parseInt(prompt("Please ennter a password length from 8-128 characters):"));
 
+  // check ensuring length of password is between 8-128 characters
   if (passwordLength >= 8 && passwordLength <= 128) {
 
+    // confirmation if the user would like lowercase characters in the password
       var includeLowerrcase = confirm("Would you like the password to include lowercase characters?");
 
+    // confirmation if the user would like uppercase characters in the password      
       var includeUppercase = confirm("Would you like the password to include uppercase letters?");
 
+    // confirmation if the user would like numeric characters in the password      
       var includeNumeric = confirm("Would you like the password to include numeric characters?");
 
+    // confirmation if the user would like special characters in the password         
       var includeSpecial = confirm("Would you like the password to include special characters?");
 
+      // check to ensure at least one character type has been selected
       if (includeLowerrcase || includeUppercase || includeNumeric || includeSpecial) {
 
         if (includeLowerrcase) {
@@ -50,16 +56,19 @@ function getPasswordOptions() {
           possibleCharacters = possibleCharacters.concat(specialCharacters);
         }
 
+        // return password based on options selected
         return {
           length: passwordLength,
           possibleCharacters: possibleCharacters
         };
 
+        // if no character type selected, user must choose again
       } else {
         alert("You must select at least one character type. Try Again.");
         return getPasswordOptions();
       }
 
+    // if user choise an invlaid character length, must try again
   } else {
     alert("The assword length is invalid. Please ensure the number selected is between 8 and 128.");
     return getPasswordOptions();
