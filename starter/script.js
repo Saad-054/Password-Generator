@@ -45,12 +45,24 @@ function getPasswordOptions() {
         if (includeNumeric) {
           possibleCharacters = possibleCharacters.concat(numericCharacters);
         }
-        
+
         if (includeSpecial) {
           possibleCharacters = possibleCharacters.concat(specialCharacters);
         }
+
+        return {
+          length: passwordLength,
+          possibleCharacters: possibleCharacters
+        };
+
+      } else {
+        alert("You must select at least one character type. Try Again.");
+        return getPasswordOptions();
       }
 
+  } else {
+    alert("The assword length is invalid. Please ensure the number selected is between 8 and 128.");
+    return getPasswordOptions();
   }
 }
 
