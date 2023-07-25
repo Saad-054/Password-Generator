@@ -18,7 +18,7 @@ Building the Password Generator App was a challenging yet rewarding project that
 - cloned the repository on my Desktop using the SSH Key
 - Customised the content of the website by adding JavaScript
 ## Usage
-![website_image](./starter/websiteimage.JPG)
+![website_image](./websiteimage.JPG)
 
 ## Credits
 There were no collaborators for this project.
